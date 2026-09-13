@@ -1,4 +1,4 @@
-import logo from '../assets/images/favicon.svg';
+import logo from '../assets/images/logo.svg';
 const links = [
   { href: '#about', label: 'about' },
   { href: '#projects', label: 'projects' },
@@ -10,7 +10,7 @@ const links = [
 export default function Navbar() {
   return (
     <nav
-      className="h-20 fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[6vw] py-5 backdrop-blur-xl border-b border-[rgba(109,123,255,0.08)]"
+      className="h-24 fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[6vw] py-5 backdrop-blur-xl border-b border-[rgba(109,123,255,0.08)]"
       style={{ background: 'rgba(8,8,16,0.88)' }}
     >
       <a href="#hero" className="flex items-center h-full">
