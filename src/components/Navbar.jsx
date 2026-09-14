@@ -1,10 +1,10 @@
 import logo from '../assets/images/logo.svg';
 const links = [
-  { href: '#about', label: 'about' },
-  { href: '#projects', label: 'projects' },
-  { href: '#skills', label: 'skills' },
-  { href: '#services', label: 'services' },
-  { href: '#contact', label: 'contact' },
+  { href: '#about', label: 'About' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#services', label: 'Services' },
+  { href: '#contact', label: 'Contact' },
 ];
 
 export default function Navbar() {
@@ -27,7 +27,7 @@ export default function Navbar() {
       </ul>
       <a 
         href="#contact"
-        className="nav-link border border-[rgba(109,123,255,0.35)] text-cyan px-5 py-2 rounded hover:bg-[rgba(109,123,255,0.1)] transition-colors"
+        className="nav-link border border-cyan-mid text-cyan px-5 py-2 rounded hover:bg-cyan-dim transition-colors"
       >
         hire me
       </a>

@@ -44,9 +44,9 @@ export default function Projects() {
             <Reveal
               key={project.id}
               index={i}
-              className="bg-surface border border-[rgba(109,123,255,0.1)] rounded-xl overflow-hidden card-hover relative"
+              className="bg-surface border border-cyan-dim rounded-xl overflow-hidden card-hover relative"
             >
-              <div className="h-44 border-b border-[rgba(109,123,255,0.1)] relative overflow-hidden">
+              <div className="h-44 border-b border-cyan-dim relative overflow-hidden">
                 <img
                   src={project.image}
                   alt={`${project.title} preview`}

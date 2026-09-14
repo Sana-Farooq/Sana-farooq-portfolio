@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const DEFAULT_ROLES = ['Frontend Dev.', 'Problem Solver.', 'Full Stack Dev.', 'UI Designer.', 'Laravel Developer'];
+const DEFAULT_ROLES = ['React Dev.', 'Problem Solver.', 'Full Stack Dev.',  'Laravel Developer'];
 
 export default function useTypedRole(roles = DEFAULT_ROLES) {
   const [text, setText] = useState('');

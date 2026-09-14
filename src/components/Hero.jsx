@@ -1,6 +1,6 @@
 import useTypedRole from '../hooks/useTypedRole';
 import myPic from '../assets/images/my-pic.png';
-import projects from '../data/projects';
+import resumeFile from '../assets/images/Sana_Farooq_Resume.pdf';
 
 const stack = [
   { name: 'React', icon: 'fa-brands fa-react' },
@@ -10,7 +10,9 @@ const stack = [
   { name: 'MySQL', icon: 'fa-solid fa-database' },
 ];
 
-const totalProjects = projects.length;
+// Real count of shipped projects — set by hand rather than derived,
+// since this may differ from the number of entries in your portfolio grid.
+const SHIPPED_PROJECTS = 5;
 
 export default function Hero() {
   const typedRole = useTypedRole();
@@ -46,7 +48,11 @@ export default function Hero() {
           <a href="#contact" className="btn-outline">
             Get In Touch
           </a>
-          <a href="/resume.pdf" download className="btn-outline">
+          <a 
+            href={resumeFile}
+            download="Sana_Farooq_Resume.pdf"
+            className="btn-outline"
+          >
             Download CV <i className="fa-solid fa-download"></i>
           </a>
         </div>
@@ -73,7 +79,7 @@ export default function Hero() {
       {/* Right — image side */}
       <div className="flex justify-center items-center relative mt-10 lg:mt-0">
         <div
-          className="absolute inset-0 m-auto w-[26rem] h-[26rem] pointer-events-none opacity-60"
+          className="absolute inset-0 m-auto w-104 h-104 pointer-events-none opacity-60"
           style={{
             backgroundImage: 'radial-gradient(rgba(109,123,255,0.35) 1.5px, transparent 1.5px)',
             backgroundSize: '18px 18px',
@@ -93,13 +99,13 @@ export default function Hero() {
         />
 
         <div className="absolute top-6 -left-4 sm:left-2 bg-surface border border-[rgba(109,123,255,0.25)] rounded-xl px-4 py-3 shadow-lg backdrop-blur-sm">
-          <p className="font-display font-extrabold text-xl text-cyan leading-none">{totalProjects}</p>
+          <p className="font-display font-extrabold text-xl text-cyan leading-none">{SHIPPED_PROJECTS}</p>
           <p className="font-mono text-[10px] text-[#7a8a9a] mt-1">Projects shipped</p>
         </div>
 
         <div className="absolute bottom-8 -right-4 sm:right-2 bg-surface border border-[rgba(109,123,255,0.25)] rounded-xl px-4 py-3 shadow-lg backdrop-blur-sm">
           <p className="font-mono text-xs text-[#e8eef5] flex items-center gap-2">
-            <i className="fa-brands fa-laravel text-cyan"></i> Full-stack ready
+            <i className="fa-solid fa-earth-americas text-cyan"></i> Open to Remote Work
           </p>
         </div>
       </div>
