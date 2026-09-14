@@ -6,18 +6,90 @@ function countTag(tag) {
 }
 
 const skills = [
-  { name: 'React', category: 'frontend', icon: 'fa-brands fa-react', count: countTag('react'), note: 'Core stack' },
-  { name: 'JavaScript', category: 'frontend', icon: 'fa-brands fa-js', count: countTag('javascript'), note: 'Core stack' },
-  { name: 'Tailwind CSS', category: 'frontend', icon: 'fa-solid fa-wind', count: countTag('tailwindcss'), note: 'Core stack' },
-  { name: 'HTML5', category: 'frontend', icon: 'fa-brands fa-html5', count: countTag('html'), note: null },
-  { name: 'Bootstrap', category: 'frontend', icon: 'fa-brands fa-bootstrap', count: countTag('bootstrap'), note: null },
-  { name: 'Laravel', category: 'backend', icon: 'fa-brands fa-laravel', count: countTag('laravel'), note: 'Core stack' },
-  { name: 'PHP', category: 'backend', icon: 'fa-brands fa-php', count: countTag('laravel'), note: null },
-  { name: 'MySQL', category: 'backend', icon: 'fa-solid fa-database', count: countTag('mysql'), note: null },
-  { name: 'Git & GitHub', category: 'tools', icon: 'fa-brands fa-github', count: null, note: 'Every project' },
-  { name: 'REST APIs', category: 'tools', icon: 'fa-solid fa-plug', count: null, note: null },
-  { name: 'Vercel', category: 'tools', icon: 'fa-solid fa-cloud-arrow-up', count: null, note: null },
-  { name: 'EmailJS', category: 'tools', icon: 'fa-solid fa-envelope', count: null, note: null },
+  {
+    name: 'React',
+    category: 'frontend',
+    icon: 'fa-brands fa-react',
+    count: countTag('react'),
+    note: 'Core stack',
+  },
+  {
+    name: 'JavaScript',
+    category: 'frontend',
+    icon: 'fa-brands fa-js',
+    count: countTag('javascript'),
+    note: 'Core stack',
+  },
+  {
+    name: 'Tailwind CSS',
+    category: 'frontend',
+    icon: 'fa-solid fa-wind',
+    count: countTag('tailwindcss'),
+    note: 'Core stack',
+  },
+  {
+    name: 'HTML5',
+    category: 'frontend',
+    icon: 'fa-brands fa-html5',
+    count: countTag('html'),
+    note: null,
+  },
+  {
+    name: 'Bootstrap',
+    category: 'frontend',
+    icon: 'fa-brands fa-bootstrap',
+    count: countTag('bootstrap'),
+    note: null,
+  },
+  {
+    name: 'Laravel',
+    category: 'backend',
+    icon: 'fa-brands fa-laravel',
+    count: countTag('laravel'),
+    note: 'Core stack',
+  },
+  {
+    name: 'PHP',
+    category: 'backend',
+    icon: 'fa-brands fa-php',
+    count: countTag('php'),
+    note: null,
+  },
+  {
+    name: 'MySQL',
+    category: 'backend',
+    icon: 'fa-solid fa-database',
+    count: countTag('mysql'),
+    note: null,
+  },
+  {
+    name: 'Git & GitHub',
+    category: 'tools',
+    icon: 'fa-brands fa-github',
+    count: null,
+    note: 'Every project',
+  },
+  {
+    name: 'REST APIs',
+    category: 'tools',
+    icon: 'fa-solid fa-plug',
+    count: countTag('rest-api'),
+    note: null,
+  },
+  {
+    name: 'Vercel',
+    category: 'tools',
+    icon: 'fa-solid fa-cloud-arrow-up',
+    count: countTag('vercel'),
+    note: null,
+  },
+  {
+    name: 'EmailJS',
+    category: 'tools',
+    icon: 'fa-solid fa-envelope',
+    count: countTag('emailjs'),
+    note: null,
+  },
 ];
 
 const tabs = [
@@ -63,7 +135,7 @@ export default function Skills() {
           {visibleSkills.map((skill) => (
             <div
               key={skill.name}
-              className="group bg-card border border-[rgba(109,123,255,0.1)] rounded-xl p-5 flex flex-col items-start gap-3 hover:border-[rgba(109,123,255,0.35)] hover:-translate-y-1 transition-all"
+              className="group bg-card border border-cyan-dim rounded-xl p-5 flex flex-col items-start gap-3 hover:border-cyan-mid hover:-translate-y-1 transition-all"
             >
               <div className="w-11 h-11 rounded-lg bg-[rgba(109,123,255,0.08)] border border-[rgba(109,123,255,0.2)] flex items-center justify-center text-xl text-cyan group-hover:bg-[rgba(109,123,255,0.15)] transition-colors">
                 <i className={skill.icon}></i>
@@ -82,7 +154,7 @@ export default function Skills() {
           ))}
         </div>
 
-        <div className="mt-8 p-6 bg-card border border-[rgba(109,123,255,0.1)] rounded-xl inline-flex items-center gap-4 flex-wrap">
+        <div className="mt-8 p-6 bg-card border border-cyan-dim rounded-xl inline-flex items-center gap-4 flex-wrap">
           <p className="font-mono text-xs text-cyan uppercase tracking-widest">Currently deepening</p>
           <div className="flex flex-wrap gap-2">
             <span className="tech-pill">Laravel</span>
