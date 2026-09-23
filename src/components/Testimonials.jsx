@@ -42,7 +42,7 @@ export default function Testimonials() {
           Client <span className="text-cyan">Testimonials</span>
         </h2>
 
-        <div className="relative bg-surface border border-[rgba(109,123,255,0.1)] rounded-2xl p-8 sm:p-10">
+        <div className="relative bg-surface border border-cyan-dim rounded-2xl p-8 sm:p-10">
           <div className="flex gap-1 mb-4 justify-center">
             <span className="text-amber-400 text-sm">★★★★★</span>
           </div>
@@ -52,7 +52,7 @@ export default function Testimonials() {
           </p>
 
           <div className="flex flex-col items-center gap-1 mb-2">
-            <div className="w-11 h-11 rounded-full bg-[rgba(109,123,255,0.1)] border border-[rgba(109,123,255,0.25)] flex items-center justify-center font-display font-bold text-sm text-cyan">
+            <div className="w-11 h-11 rounded-full bg-cyan-dim border border-[rgba(109,123,255,0.25)] flex items-center justify-center font-display font-bold text-sm text-cyan">
               {t.initials}
             </div>
             <p className="font-display font-semibold text-sm text-[#e8eef5] mt-2">{t.name}</p>

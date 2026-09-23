@@ -12,7 +12,7 @@ const stack = [
 
 // Real count of shipped projects — set by hand rather than derived,
 // since this may differ from the number of entries in your portfolio grid.
-const SHIPPED_PROJECTS = 5;
+const SHIPPED_PROJECTS = "5+";
 
 export default function Hero() {
   const typedRole = useTypedRole();
